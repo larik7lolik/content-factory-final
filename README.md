@@ -122,3 +122,24 @@
 ## Лицензия
 
 MIT
+
+
+## 📸 Скриншоты работы
+
+### Структура проекта
+![Структура проекта](images/stuktura.png)
+
+### Агенты проекта
+![Агенты](images/agents.png)
+
+### Запуск скрипта
+![Запуск скрипта](images/claude_ansawer.png)
+
+### Результат output.json
+![Output JSON](images/output_json.png)
+
+### Обложка cover.png
+![Cover](images/cover.png)
+
+### Контент для платформ
+![Content](images/content.png)
