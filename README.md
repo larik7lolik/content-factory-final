@@ -38,13 +38,13 @@
 ## Скриншоты работы
 
 ### Скриншот запуска скрипта
-![Скриншот запуска скрипта](screenshots/run_script.png)
+![Скриншот запуска скрипта](images/claude_ansawer.png)
 
 ### Скриншот output.json
-![Скриншот output.json](screenshots/output_json.png)
+![Скриншот output.json](images/output_json.png)
 
 ### Скриншот обложки cover.png
-![Скриншот обложки cover.png](screenshots/cover_png.png)
+![Скриншот обложки cover.png](images/cover.png)
 
 ## Roadmap развития
 
