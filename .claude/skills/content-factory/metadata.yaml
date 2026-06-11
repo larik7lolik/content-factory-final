@@ -1,0 +1,27 @@
+---
+name: content-factory
+description: AI-powered content generation system for EdTech marketers
+author: User
+version: 1.0.0
+tags:
+  - content-generation
+  - edtech
+  - marketing
+  - automation
+requirements:
+  - python>=3.8
+  - openai
+  - python-dotenv
+  - pillow
+  - requests
+commands:
+  - name: generate-content
+    description: Generate content for all platforms
+    usage: python scripts/content_factory.py "<topic>"
+  - name: run-researcher
+    description: Research a topic
+    usage: python agents/researcher.py "<topic>"
+  - name: run-content-writer
+    description: Create platform-specific content
+    usage: python agents/content_writer.py "<topic>" content/research.json
+---

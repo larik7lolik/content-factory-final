@@ -1,0 +1,26 @@
+{
+  "name": "content-factory",
+  "version": "1.0.0",
+  "description": "AI-powered content generation system for EdTech marketers",
+  "entrypoint": ".claude/skills/content-factory/content-factory.sh",
+  "commands": {
+    "generate": {
+      "description": "Generate content for all platforms",
+      "usage": "content-factory generate \"<topic>\""
+    },
+    "research": {
+      "description": "Research a topic",
+      "usage": "content-factory research \"<topic>\""
+    },
+    "status": {
+      "description": "Check project status",
+      "usage": "content-factory status"
+    }
+  },
+  "files": [
+    ".claude/skills/content-factory/SKILL.md",
+    ".claude/skills/content-factory/metadata.yaml",
+    ".claude/skills/content-factory/content_factory_skill.py",
+    ".claude/skills/content-factory/content-factory.sh"
+  ]
+}
