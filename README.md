@@ -143,3 +143,60 @@ MIT
 
 ### Контент для платформ
 ![Content](images/content.png)
+
+## 🐳 Запуск в Docker
+
+Проект можно запустить в Docker-контейнере одной командой — без установки Python и зависимостей.
+
+### Предварительные требования
+
+- Установленный [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- API-ключ от [ProxyAPI](https://console.proxyapi.ru/)
+
+### Быстрый запуск
+
+```bash
+docker run --rm \
+           -e OPENAI_API_KEY=ваш_ключ \
+           -e OPENAI_BASE_URL=https://api.proxyapi.ru/openai/v1 \
+           -v $(pwd)/content:/app/content \
+           larik7lolik/content-factory \
+           python scripts/content_factory.py "Тема урока"
+Что делает каждая часть команды:
+Флаг
+Описание
+--rm
+Автоматически удаляет контейнер после завершения
+-e OPENAI_API_KEY=...
+Передаёт API-ключ внутрь контейнера
+-e OPENAI_BASE_URL=...
+Указывает URL ProxyAPI
+-v $(pwd)/content:/app/content
+Связывает папку content/ на вашем компьютере с папкой внутри контейнера
+larik7lolik/content-factory
+Имя образа
+python scripts/...
+Команда для запуска с нужной темой
+Пример сгенерированной обложки
+![Обложка, сгенерированная в Docker](images/docker_generated_cover.png)
+Сборка образа из исходников
+Если хотите собрать образ самостоятельно:
+# Клонируйте репозиторий
+git clone https://github.com/larik7lolik/content-factory-final.git
+cd content-factory-final
+
+# Соберите образ
+docker build -t content-factory .
+
+# Запустите
+docker run --rm \
+           -e OPENAI_API_KEY=ваш_ключ \
+           -e OPENAI_BASE_URL=https://api.proxyapi.ru/openai/v1 \
+           -v $(pwd)/content:/app/content \
+           content-factory \
+           python scripts/content_factory.py "Тема урока"
+Что даёт Docker для этого проекта
+✅ Портативность — работает одинаково на Windows, macOS и Linux
+✅ Изоляция — не засоряет систему Python-зависимостями
+✅ Простота — одна команда вместо настройки окружения
+✅ Масштабируемость — легко запустить несколько копий
