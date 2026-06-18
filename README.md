@@ -178,7 +178,9 @@ larik7lolik/content-factory
 python scripts/...
 Команда для запуска с нужной темой
 Пример сгенерированной обложки
-![Обложка, сгенерированная в Docker](images/docker_generated_cover.png)
+
+![Обложка, сгенерированная в Docker](https://raw.githubusercontent.com/larik7lolik/content-factory-final/master/images/docker_generated_cover.png)
+
 Сборка образа из исходников
 Если хотите собрать образ самостоятельно:
 # Клонируйте репозиторий
