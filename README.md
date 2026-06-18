@@ -179,7 +179,8 @@ python scripts/...
 Команда для запуска с нужной темой
 Пример сгенерированной обложки
 
-![Обложка, сгенерированная в Docker](https://raw.githubusercontent.com/larik7lolik/content-factory-final/master/images/docker_generated_cover.png)
+<img width="1024" height="1024" alt="docker_generated_cover" src="https://github.com/user-attachments/assets/c9d397ca-b41e-4273-98df-bb6a78550381" />
+
 
 Сборка образа из исходников
 Если хотите собрать образ самостоятельно:
