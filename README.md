@@ -155,14 +155,15 @@ MIT
 
 ### Быстрый запуск
 
-```bash
+
 docker run --rm \
            -e OPENAI_API_KEY=ваш_ключ \
            -e OPENAI_BASE_URL=https://api.proxyapi.ru/openai/v1 \
            -v $(pwd)/content:/app/content \
            larik7lolik/content-factory \
            python scripts/content_factory.py "Тема урока"
-Что делает каждая часть команды:
+           
+## Что делает каждая часть команды:
 Флаг
 Описание
 --rm
@@ -177,12 +178,14 @@ larik7lolik/content-factory
 Имя образа
 python scripts/...
 Команда для запуска с нужной темой
-Пример сгенерированной обложки
+
+## Пример сгенерированной обложки
 
 <img width="1024" height="1024" alt="docker_generated_cover" src="https://github.com/user-attachments/assets/c9d397ca-b41e-4273-98df-bb6a78550381" />
 
 
-Сборка образа из исходников
+## Сборка образа из исходников
+
 Если хотите собрать образ самостоятельно:
 # Клонируйте репозиторий
 git clone https://github.com/larik7lolik/content-factory-final.git
@@ -198,8 +201,10 @@ docker run --rm \
            -v $(pwd)/content:/app/content \
            content-factory \
            python scripts/content_factory.py "Тема урока"
-Что даёт Docker для этого проекта
-✅ Портативность — работает одинаково на Windows, macOS и Linux
-✅ Изоляция — не засоряет систему Python-зависимостями
-✅ Простота — одна команда вместо настройки окружения
-✅ Масштабируемость — легко запустить несколько копий
+           
+## Что даёт Docker для этого проекта
+
+- Портативность — работает одинаково на Windows, macOS и Linux
+- Изоляция — не засоряет систему Python-зависимостями
+- Простота — одна команда вместо настройки окружения
+- Масштабируемость — легко запустить несколько копий
